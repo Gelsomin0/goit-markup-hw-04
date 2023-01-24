@@ -134,7 +134,8 @@ body {
     color: var(--navy-blue);
 }
 
-.menu-item-link:hover {
+.menu-item-link:hover,
+.menu-item-link:focus {
     color: var(--ocean);
 }
 
@@ -151,7 +152,8 @@ body {
     color: var(--slate);
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:focus {
     color: var(--ocean);
 }
 
@@ -165,6 +167,9 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--navy-blue);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
 }
 .hero-title {
     width: 500px;
@@ -194,12 +199,24 @@ body {
     border-radius: 4px;
 }
 
-.order-btn:hover {
+.order-btn:hover,
+.order-btn:focus {
     background-color: var(--ocean);
 }
 
 
 /* ========================== ADVANTAGES SECTION ========================== */
+
+.advantage-icon {
+    background-color: var(--cloud);
+    border-radius: 4px;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+}
+
+.icon {
+    fill: var(--navy-blue);
+}
 
 .advantages {
     display: flex;
@@ -260,7 +277,7 @@ body {
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
                 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    }
+}
 
 .character-info {
     padding: 32px 16px;
@@ -283,10 +300,76 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--slate);
+    margin-bottom: 8px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--iris);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.social-link:hover {
+    background-color: var(--ocean);
+}
+
+.social-link-icon {
+    fill: var(--cloud);
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 
+
+/* ========================== CUSTOMERS SECTION ========================== */
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+
+.customers-list-item {
+    padding: 16px 32px;
+    border: 1px solid var(--light-slate);
+    border-radius: 4px; 
+    width: 168px;
+    height: 88px;
+}
+
+.customers-list-item:hover {
+    cursor: pointer;
+    border-color: var(--ocean);
+}
+
+.customers-list-item:hover .customer-icon {
+    fill: var(--ocean);
+}
+
+.customer-icon {
+    fill: var(--light-slate);
+    width: 104px;
+    height: 56px;
+}
+
+
+
 /* ========================== FOOTER ========================== */
+
+.footer-section {
+    display: flex;
+    gap: 120px;
+    align-items: flex-start;
+}
 
 .footer {
     background-color: var(--navy-blue);
@@ -315,6 +398,36 @@ body {
     letter-spacing: 0.02em;
     color: var(--cornflower);
     width: 264px;
+}
+
+.footer-social-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;    
+}
+
+.footer-social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.footer-social-link-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--cloud);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--green);
 }
 
 
@@ -350,7 +463,8 @@ body {
     padding: 12px 24px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     color: #fff;
     background-color: var(--ocean);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
@@ -361,6 +475,13 @@ body {
 
 .item-block {
     width: calc((100% - 24px * 2) / 3);
+}
+
+.item-block:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-items {
